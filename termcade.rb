@@ -5,21 +5,21 @@
 class Termcade < Formula
   desc "Classic arcade games in your terminal, built with Go and Bubble Tea"
   homepage "https://github.com/kacheo/termcade"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/kacheo/termcade/releases/download/v0.1.0/termcade_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c837baa688102f0a189dbc4243afdb2766f79cd3d0c7a657891926a4321a61a4"
+      url "https://github.com/kacheo/termcade/releases/download/v0.2.0/termcade_0.2.0_darwin_amd64.tar.gz"
+      sha256 "c7cb85377ef2124d279e71b3d7298c68edec67fe9dc794d0ef8e86a661228355"
 
       define_method(:install) do
         bin.install "termcade"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/kacheo/termcade/releases/download/v0.1.0/termcade_0.1.0_darwin_arm64.tar.gz"
-      sha256 "8f1c4ff0683e59e45a515cc9bae8a2dbfb40782f076d4b7184428d5adccf383a"
+      url "https://github.com/kacheo/termcade/releases/download/v0.2.0/termcade_0.2.0_darwin_arm64.tar.gz"
+      sha256 "67717c772d72f67a0620b8b8a77ba66437aa227b001086fa0429064d1e58e656"
 
       define_method(:install) do
         bin.install "termcade"
@@ -29,8 +29,8 @@ class Termcade < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/kacheo/termcade/releases/download/v0.1.0/termcade_0.1.0_linux_amd64.tar.gz"
-      sha256 "0e80b6bef1f194d2d3c91ece1a03d0e0984ef6fe72beac7bdf8dae6254f8a88d"
+      url "https://github.com/kacheo/termcade/releases/download/v0.2.0/termcade_0.2.0_linux_amd64.tar.gz"
+      sha256 "3b5c815a11809033a67635ba35c9afbe94ef7ed045ac1628a23caa8637e53db5"
       define_method(:install) do
         bin.install "termcade"
       end
